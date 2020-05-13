@@ -78,6 +78,7 @@ export default {
   font-weight: bolder;
   color: white;
  
+ 
   // text-align: center;
 }
 .fas.fa-cart-arrow-down{

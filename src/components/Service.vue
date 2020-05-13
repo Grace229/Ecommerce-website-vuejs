@@ -17,7 +17,7 @@ Delivery times depend on your local postal service and may vary
     </b-card-body>
   <b-card-body>
 <div class="display"><span  class="icon"><i class="fas fa-undo-alt"></i></span><p> Return Policy</p></div>
- Free return within 15 days for Jumia Mall items and 7 days for other eligible items
+ Free return within 15 days for Havilah Mall items and 7 days for other eligible items
     </b-card-body>
  
   </b-card>
@@ -31,7 +31,7 @@ export default {
 </script>
 <style lang="scss" scoped>
     #card{
-        padding-left: 100px;
+       
     }
 
 p{

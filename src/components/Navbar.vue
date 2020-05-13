@@ -1,5 +1,5 @@
 <template>
-  <div class="hello" style="margin-bottom: 10px;">
+  <div class="hello" style="margin-bottom: 80px;">
    
 
 <div >

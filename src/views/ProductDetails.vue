@@ -1,32 +1,17 @@
 <template>
   <div id="Hello">
     <Navbar />
-
-    <b-container class="bv-example-row">
-
-  <b-row>
-    <b-col cols="8"  id="col-8">
-      <b-container class="bv-example-row">
-  <b-row align-h="start">
-    <b-col cols="8">
       
-<img :src="productItems[0].imageLink"  id="img" />
-<b-container class="bv-example-row">
-  <b-row>
-    <b-col sm><img :src="productItems[0].imageLink1" class="images one" @click="switchImg()" /></b-col>
-    <b-col sm><img :src="productItems[0].imageLink2" class="images two" @click="switchImg1()" /></b-col>
-    <b-col sm><img :src="productItems[0].imageLink" class="images three" @click="switchImg2()" /></b-col>
-  </b-row>
-</b-container>
-<b-container class="bv-example-row">
-  <b-row>
-    <b-col cols="6"> <h1>{{ productItems[0].Name }}</h1></b-col>
-    <b-col cols="6"> <h1>  &#8358;{{ productItems[0].Price}}</h1></b-col>
-  </b-row>
-</b-container>
+ <img :src="productItems[0].imageLink"  id="img" /><br>
+<div id="images">
+ <img :src="productItems[0].imageLink1" class="images one" @click="switchImg()" />
+   <img :src="productItems[0].imageLink2" class="images two" @click="switchImg1()" />
+    <img :src="productItems[0].imageLink" class="images three" @click="switchImg2()" />
+    </div>
  
-    </b-col>
-    <b-col cols="4">
+    <h1>{{ productItems[0].Name }}</h1>
+  <h1>  {{ productItems[0].Price}}</h1>
+ 
       
        
         <h1>Description</h1>
@@ -36,22 +21,9 @@
 
 
        <Productcontent  />
+<Service  />
 
 
-    </b-col>
-  </b-row>
-
-</b-container>
-
-
-    </b-col>
-
-
-    <b-col cols="4" id="col-4">
-      <service />
-    </b-col>
-  </b-row>
-</b-container>
 <Footer />
   </div>
 </template>
@@ -67,6 +39,7 @@ export default {
         Navbar,
         Footer,
         Service
+      
     },
   
     data() {
@@ -140,19 +113,16 @@ width: 100%;
   /* width: 100%; */
 }
 
-#col{
-    margin-right: 80px;
-}
 
 .images{
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     margin-top: 20px;
 
 }
 #img{
-    width: 250px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
      margin-right: 100px;
 }
 h1{
@@ -167,14 +137,17 @@ h1{
 width: 100%;
 }
 @media only screen and (max-width: 500px) and (min-width: 320px){
-#hello{
-  width: 100%;
+#images{
+  display: flex;
+
 }
 }
 
 @media only screen and (max-width: 500px) and (min-width: 320px){
-  #col-4{
-    display: none;
+  .images{
+    display: inline;
+    width: 80px;
+    height: 100px;
 
   }
 }
