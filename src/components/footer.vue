@@ -142,7 +142,7 @@ color: #FFBF00;
 }
 #container{
   background-color: black;
-  height: 400px;
+  height: auto;
   clear: both;
   width: 100%;
 }
