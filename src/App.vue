@@ -12,6 +12,7 @@ export default {
 </script>
 <style scoped>
 #app{
-  background-color: #f8f9fa;;
+  background-color: #f8f9fa;
+  height: 100%;
 }
 </style>

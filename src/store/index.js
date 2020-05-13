@@ -5,6 +5,9 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    cart:[
+    ],
+    cartQty:null,
     products:[
       {
         id: 1,
@@ -106,7 +109,9 @@ export default new Vuex.Store({
  
       ]
   },
-  mutations: {
+  mutations:{
+
+
   },
   actions: {
   },

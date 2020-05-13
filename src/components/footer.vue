@@ -54,13 +54,13 @@
     </ul>
     </b-col>
     <b-col>
-     <h1 class="info">follow us</h1>
+     <h1 class="info">Payment method</h1>
     <ul class="social">
-      <li><i class="fab fa-facebook"></i></li>
-      <li><i class="fab fa-google-plus"></i></li>
-      <li><i class="fab fa-twitter-square"></i></li>
-       <li><i class="fab fa-youtube-square"></i></li>
-       <li><i class="fab fa-linkedin"></i></li>
+      <li><i class="fab fa-cc-paypal"></i></li>
+      <li><i class="fab fa-apple-pay"></i></li>
+      <li><i class="fab fa-cc-mastercard"></i></li>
+      <li><i class="fab fa-cc-visa"></i></li>
+       
     </ul>
     </b-col>
     <b-col><em><p id="copy"><i class="fas fa-copyright"></i>2020 havila.ltd.All rights reserved</p></em></b-col>
@@ -136,13 +136,13 @@ color: #FFBF00;
   
 }
 .social li{
-  font-size: 25px;
+  font-size: 40px;
   padding: 10px;
   color: #FFBF00;
 }
 #container{
   background-color: black;
-  height: auto;
+  height: 400px;
   clear: both;
   width: 100%;
 }
@@ -187,7 +187,12 @@ ul li{
 
 }
 .mine:hover{
-  border-bottom: 1px solid #FFBF00;
+ color: #FFBF00;
   padding: 5px;
 }
+a:link{
+ 
+     text-decoration: none;
+  }
+
 </style>

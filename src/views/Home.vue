@@ -133,7 +133,7 @@ products: this.$store.state.products,
   
   color: black;
   // background-color: blue;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 
 
 }
